@@ -42,9 +42,12 @@ class ChatsPage extends StatelessWidget {
                           contactList[index].name,
                           style: TextStyle(fontSize: 16, letterSpacing: 1),
                         ),
-                        Text(
-                          contactList[index].message,
-                          style: TextStyle(color: Colors.black45),
+                        Container(
+                          width: 190,
+                          child: Text(
+                            contactList[index].message,overflow: TextOverflow.ellipsis,
+                            style: TextStyle(color: Colors.black45),
+                          ),
                         )
                       ],
                     ),
